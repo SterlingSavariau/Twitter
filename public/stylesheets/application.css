@@ -172,3 +172,13 @@ input.button {
   font-size: 12px;
   list-style: disc;
 }
+
+/* Character Count */
+
+h2.dark_red {
+  color: #5C0002;
+}
+
+h2.red {
+  color: #D40D12;
+}

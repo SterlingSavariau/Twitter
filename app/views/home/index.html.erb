@@ -1,6 +1,18 @@
+<script type="text/javascript">
+$(function() {
+  $('#tweet_message').keyup(function() {
+	var content_length = $(this).val().length;
+	var remaining = 140 - content_length
+	$('#char_count').html(remaining);
+  })
+})
+</script>
+
 <%- form_for Tweet.new do |f| -%>
   <div id="new_tweet_form">
-  	<h3>What are you doing?</h3>
+  	<h3 style="float: left;">What are you doing?</h3>
+  	<h3 id="char_count" style="float: right; font-size: 23px; font-weight: bold; color: #AAA;">140</h3>
+  	<div class="clear"></div>
 	<%= f.text_area :message %>
 	<div id="latest_message">
 		<strong>Latest: </strong><%= h @last_tweet.message %>
