@@ -1,15 +1,30 @@
-<% title "Welcome #{current_user.username}" %>
-
-<% form_for Tweet.new do |f| %>
+<%- form_for Tweet.new do |f| -%>
+  <div id="new_tweet_form">
+  	<h3>What are you doing?</h3>
 	<%= f.text_area :message %>
-	<%= f.submit "Post" %>
-<% end %>
+	<div id="latest_message">
+		<strong>Latest: </strong><%= h @last_tweet.message %>
+		<%= distance_of_time_in_words_to_now(@last_tweet.created_at) %> ago
+	</div>
+	<div id="submit_button_container">
+		<%= f.submit "Tweet", :class => "button" %>
+	</div>
+	<div class="clear"></div>
+  </div>
+<%- end -%>
 
 <ul id="timeline">
 	<% @tweets.each do |tweet| %>
 	<li<% if @tweets.first == tweet %> class="first"<% end %>>
-		<span>
-		<%=h tweet.message %>
+		<%= image_tag tweet.user.gravatar_url %>
+	  <div class="tweet_message_container">
+		<%= link_to tweet.user.username %>
+		<%= h tweet.message %>
+		<div class="time_ago">
+			<%= distance_of_time_in_words_to_now(tweet.created_at) %> ago
+		</div>
+	  </div>
+		<div class ="clear"></div>
 	</li>
 	<% end %>
 </ul>
