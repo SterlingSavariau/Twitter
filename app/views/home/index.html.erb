@@ -1,1 +1,15 @@
 <% title "Welcome #{current_user.username}" %>
+
+<% form_for Tweet.new do |f| %>
+	<%= f.text_area :message %>
+	<%= f.submit "Post" %>
+<% end %>
+
+<ul id="timeline">
+	<% @tweets.each do |tweet| %>
+	<li<% if @tweets.first == tweet %> class="first"<% end %>>
+		<span>
+		<%=h tweet.message %>
+	</li>
+	<% end %>
+</ul>

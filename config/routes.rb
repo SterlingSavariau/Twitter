@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :sessions
 
   map.resources :users
-
+  map.resources :tweets
 
   map.root :controller => "home"
 

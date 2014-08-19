@@ -46,6 +46,28 @@ a {
   display: inline;
 }
 
+/* Timeline */
+#timeline {
+  margin: 0px;
+  padding: 0px;
+}
+
+#timeline li {
+  list-style: none;
+  padding: 10px 0px;
+  margin: 0px;
+  background-color: #fff;
+  border-bottom: 1px dashed #D2DADA;
+}
+
+#timeline li.first {
+  border-top: 1px dashed #D2DADA;
+}
+
+#timeline li:hover {
+  background-color: #F7F7F7;
+}
+
 #errorExplanation {
   width: 400px;
   border: 2px solid #CF0000;
