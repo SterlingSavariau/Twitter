@@ -58,13 +58,16 @@ input.button {
 
 /* Tweet Form */
 #new_tweet_form {
-  width: 521px;
+  min-width: 521px;
+  max-width: 521px;
   margin-bottom: 25px;
 }
 
 #new_tweet_form textarea {
-  width: 521px;
-  height: 44px;
+  min-width: 521px;
+  max-width: 521px;
+  max-height: 44px;
+  min-height: 44px;
 }
 
 #new_tweet_form h3 {
@@ -123,6 +126,7 @@ input.button {
 #timeline li div.tweet_message_container {
   float: left;
   margin-left: 10px;
+  width: 450px;
 }
 
 #timeline li div.tweet_message_container a {
@@ -175,10 +179,17 @@ input.button {
 
 /* Character Count */
 
-h2.dark_red {
-  color: #5C0002;
+#char_count {
+  float: right; 
+  font-size: 23px; 
+  font-weight: bold !important; 
+  color: #AAA;
 }
 
-h2.red {
-  color: #D40D12;
+.dark_red {
+  color: #5C0002 !important;
+}
+
+.red {
+  color: #D40D12 !important;
 }

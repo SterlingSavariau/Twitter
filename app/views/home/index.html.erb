@@ -4,6 +4,15 @@ $(function() {
 	var content_length = $(this).val().length;
 	var remaining = 140 - content_length
 	$('#char_count').html(remaining);
+	if (remaining < 21 && remaining > 9) {
+	  $('#char_count').removeClass('red');
+	  $('#char_count').addClass('dark_red');
+	} else if (remaining <= 9) {
+	  $('#char_count').removeClass('dark_red');
+	  $('#char_count').addClass('red');
+	} else {
+	  $('#char_count').removeClass('dark_red').removeClass('red');
+	}
   })
 })
 </script>
@@ -11,7 +20,7 @@ $(function() {
 <%- form_for Tweet.new do |f| -%>
   <div id="new_tweet_form">
   	<h3 style="float: left;">What are you doing?</h3>
-  	<h3 id="char_count" style="float: right; font-size: 23px; font-weight: bold; color: #AAA;">140</h3>
+  	<h3 id="char_count">140</h3>
   	<div class="clear"></div>
 	<%= f.text_area :message %>
 	<div id="latest_message">
@@ -25,18 +34,4 @@ $(function() {
   </div>
 <%- end -%>
 
-<ul id="timeline">
-	<% @tweets.each do |tweet| %>
-	<li<% if @tweets.first == tweet %> class="first"<% end %>>
-		<%= image_tag tweet.user.gravatar_url %>
-	  <div class="tweet_message_container">
-		<%= link_to tweet.user.username %>
-		<%= h tweet.message %>
-		<div class="time_ago">
-			<%= distance_of_time_in_words_to_now(tweet.created_at) %> ago
-		</div>
-	  </div>
-		<div class ="clear"></div>
-	</li>
-	<% end %>
-</ul>
+<%= render :partial => "timeline", :locals => { :tweets => @tweets }%>

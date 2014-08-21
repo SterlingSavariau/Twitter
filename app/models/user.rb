@@ -21,11 +21,22 @@ class User < ActiveRecord::Base
   has_many :friendships
   has_many :friends, :through => :friendships
 
-  def add_friend(friend)
+def add_friend(friend)
   friendship = friendships.build(:friend_id => friend.id)
   if !friendship.save
     logger.debug "User '#{friend.email}' already exists in the user's friendship list."
   end
+end
+
+def remove_friend(friend)
+  friendship = Friendship.find(:first, :conditions => ["user_id = ? and friend_id = ?", self.id, friend.id])
+  if friendship
+    friendship.destroy
+  end
+end
+
+def is_friend?(friend)
+  return self.friends.include? friend
 end
 
   def all_tweets
