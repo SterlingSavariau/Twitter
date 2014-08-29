@@ -15,7 +15,9 @@ a img {
 }
 
 a {
-  color: #0000FF;
+  color: #2276BB;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .clear {
@@ -208,4 +210,31 @@ input.button {
 
 .red {
   color: #D40D12 !important;
+}
+
+#my_info_container {}
+#my_info_container img {
+  float: left;
+}
+#my_info_container .contents {
+  font-family: Helvetica Neue, Helvetica,sans-serif;
+  font-weight: bold;
+  color: #333333;
+  font-size: 13px;
+  float: left;
+  padding-left: 5px;
+  line-height: 14px;
+}
+
+#my_info_container .contents .small {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#side_content_container {
+  margin-top: 15px;
+}
+
+#side_content_container h4 {
+  margin: 2px 0px;
 }

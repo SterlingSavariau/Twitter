@@ -3,7 +3,7 @@
 	<li<% if tweets.first == tweet %> class="first"<% end %>>
 		<%= image_tag tweet.user.gravatar_url %>
 	  <div class="tweet_message_container">
-		<%= link_to tweet.user.username %>
+		<%= link_to tweet.user.username, user_tweets_path(tweet.user.username) %>
 		<%= h tweet.message %>
 		<div class="time_ago">
 			<%= distance_of_time_in_words_to_now(tweet.created_at) %> ago

@@ -21,6 +21,10 @@ class User < ActiveRecord::Base
   has_many :friendships
   has_many :friends, :through => :friendships
 
+def friends_of
+  Friendship.find(:all, :conditions => ["friend_id = ?", self.id]).map{|f|f.user}
+end
+
 def add_friend(friend)
   friendship = friendships.build(:friend_id => friend.id)
   if !friendship.save
