@@ -1,5 +1,10 @@
 body {
-  background-color: #4B7399;
+  margin: 0px;
+  padding: 0px;
+  background-color: #C0DEED;
+  background-image: url(/images/bg-clouds.png);
+  background-position: top middle;
+  background-repeat: repeat-x;
   font-family: 'Lucida Grande', sans-serif;
   font-size: 0.75em;
   color: #333333;
@@ -20,12 +25,23 @@ a {
 }
 
 #container {
-  width: 75%;
-  margin: 0 auto;
+  width: 715px;
+  margin: 0 auto 25px auto;
   background-color: #FFF;
-  padding: 20px 40px;
-  border: solid 1px black;
+  padding: 20px 20px;
   margin-top: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+#main {
+  width: 540px;
+  float: left;
+}
+
+#side {
+  width: 160px;
+  float: right;
 }
 
 #flash_notice, #flash_error {

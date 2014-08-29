@@ -6993,3 +6993,1825 @@ ActionView::TemplateError (undefined method `message' for nil:NilClass) on line 
 Rendered rescues/_trace (41.1ms)
 Rendered rescues/_request_and_response (0.2ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20140818054425)
+Migrating to CreateTweets (20140818062356)
+Migrating to CreateFriendships (20140818072958)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("friendships")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tweets")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mTweet Load (0.8ms)[0m   [0mSELECT * FROM "tweets" WHERE ("tweets".user_id = 72) [0m
+  [4;36;1mTweet Destroy (0.3ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 1[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 2[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 3[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 4[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 5[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 6[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 533[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 534[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 535[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 536[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 537[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 538[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 539[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 540[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 541[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 542[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 543[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 544[0m
+  [4;36;1mUser Destroy (0.1ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 72[0m
+  [4;35;1mTweet Load (0.5ms)[0m   [0mSELECT * FROM "tweets" WHERE ("tweets".user_id = 73) [0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 7[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 8[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 9[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 10[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 11[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 12[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 13[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 14[0m
+  [4;36;1mUser Destroy (0.1ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 73[0m
+  [4;35;1mTweet Load (0.5ms)[0m   [0mSELECT * FROM "tweets" WHERE ("tweets".user_id = 74) [0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 15[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 16[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 17[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 18[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 19[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 20[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 21[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 22[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 23[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 24[0m
+  [4;36;1mUser Destroy (0.1ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 74[0m
+  [4;35;1mTweet Load (0.9ms)[0m   [0mSELECT * FROM "tweets" WHERE ("tweets".user_id = 75) [0m
+  [4;36;1mTweet Destroy (0.3ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 25[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 26[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 27[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 28[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 29[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 30[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 31[0m
+  [4;35;1mUser Destroy (0.1ms)[0m   [0mDELETE FROM "users" WHERE "id" = 75[0m
+  [4;36;1mTweet Load (0.5ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets".user_id = 76) [0m
+  [4;35;1mTweet Destroy (0.2ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 32[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 33[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 34[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 35[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 36[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 37[0m
+  [4;35;1mUser Destroy (0.1ms)[0m   [0mDELETE FROM "users" WHERE "id" = 76[0m
+  [4;36;1mTweet Load (0.4ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets".user_id = 77) [0m
+  [4;35;1mTweet Destroy (0.3ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 38[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 39[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 40[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 41[0m
+  [4;35;1mTweet Destroy (35.9ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 42[0m
+  [4;36;1mUser Destroy (0.1ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 77[0m
+  [4;35;1mTweet Load (0.5ms)[0m   [0mSELECT * FROM "tweets" WHERE ("tweets".user_id = 78) [0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 43[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 44[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 45[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 46[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 47[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 48[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 49[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 50[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 51[0m
+  [4;35;1mUser Destroy (0.1ms)[0m   [0mDELETE FROM "users" WHERE "id" = 78[0m
+  [4;36;1mTweet Load (0.4ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets".user_id = 79) [0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 52[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 53[0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 54[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 55[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 56[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 57[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 58[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 59[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 60[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 61[0m
+  [4;35;1mUser Destroy (0.1ms)[0m   [0mDELETE FROM "users" WHERE "id" = 79[0m
+  [4;36;1mTweet Load (0.5ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets".user_id = 80) [0m
+  [4;35;1mTweet Destroy (0.1ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 62[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 63[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 64[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 65[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 66[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 67[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 68[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 69[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 70[0m
+  [4;36;1mUser Destroy (0.1ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 80[0m
+  [4;35;1mTweet Load (0.6ms)[0m   [0mSELECT * FROM "tweets" WHERE ("tweets".user_id = 81) [0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 71[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 72[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 73[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 74[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 75[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 76[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 77[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 78[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 545[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 546[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 547[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 548[0m
+  [4;36;1mTweet Destroy (0.0ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 549[0m
+  [4;35;1mTweet Destroy (0.0ms)[0m   [0mDELETE FROM "tweets" WHERE "id" = 550[0m
+  [4;36;1mTweet Destroy (0.1ms)[0m   [0;1mDELETE FROM "tweets" WHERE "id" = 551[0m
+  [4;35;1mUser Destroy (0.1ms)[0m   [0mDELETE FROM "users" WHERE "id" = 81[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets".user_id = 82) [0m
+  [4;35;1mUser Destroy (0.1ms)[0m   [0mDELETE FROM "users" WHERE "id" = 82[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'gillian.yundt') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'davonte.rodriguez@torphy.info') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("created_at", "password_salt", "updated_at", "password_hash", "email", "username") VALUES('2014-08-29 06:40:52', '97f0f813dc3cad3742c193df882139d46a389f54', '2014-08-29 06:40:52', 'b1d1ff1c8d4f1442027cf34dbbf28565ece035ef', 'davonte.rodriguez@torphy.info', 'gillian.yundt')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'elroy') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'adrienne@schmidtgoyette.name') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("created_at", "password_salt", "updated_at", "password_hash", "email", "username") VALUES('2014-08-29 06:40:52', '32a8d62a4f240564a73b4b4383a8f6a3e426dcd5', '2014-08-29 06:40:52', '3094fc9ea28f24923071d32247e23e1f1a241f7b', 'adrienne@schmidtgoyette.name', 'elroy')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'sonya') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'gunnar.larson@schneidercremin.name') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("created_at", "password_salt", "updated_at", "password_hash", "email", "username") VALUES('2014-08-29 06:40:52', '6beb5e5b1854995db19e42cd4eff3134f7953ea4', '2014-08-29 06:40:52', '7665ba21ddad7f4db6d33d319648e4bfa88808c2', 'gunnar.larson@schneidercremin.name', 'sonya')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'olen_metz') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'virginia.heller@altenwerth.info') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("created_at", "password_salt", "updated_at", "password_hash", "email", "username") VALUES('2014-08-29 06:40:52', 'b9e137ba7a8ac3a13c96176687cb7383061ca41f', '2014-08-29 06:40:52', '08b998320d234db627f53fe78e81d872573e8eba', 'virginia.heller@altenwerth.info', 'olen_metz')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'catharine') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joey@keebler.name') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("created_at", "password_salt", "updated_at", "password_hash", "email", "username") VALUES('2014-08-29 06:40:52', 'e54c531d04e2b50f3c132245d8d43316b50cee89', '2014-08-29 06:40:52', 'c21732d3f63bb157bec7dfb5dbe9044bae10f84c', 'joey@keebler.name', 'catharine')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'floyd') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'antone@hoppe.name') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("created_at", "password_salt", "updated_at", "password_hash", "email", "username") VALUES('2014-08-29 06:40:52', 'c0d1d97492793aec272b0969153ab1625ee4229d', '2014-08-29 06:40:52', 'a27d9e4301486b73579826b3664d4decd395c6f6', 'antone@hoppe.name', 'floyd')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'christophe') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'lucienne@roob.info') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("created_at", "password_salt", "updated_at", "password_hash", "email", "username") VALUES('2014-08-29 06:40:52', 'a4931d6d52754c956c9fcba939a8eec50f72f8b8', '2014-08-29 06:40:52', '814929f5d28820aa4ccf33c2c27d44026a3d90d0', 'lucienne@roob.info', 'christophe')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'terrill') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'emiliano.berge@kiehn.name') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("created_at", "password_salt", "updated_at", "password_hash", "email", "username") VALUES('2014-08-29 06:40:52', 'b36873444cfaa067facc4f897bd2e96ac50817fb', '2014-08-29 06:40:52', 'd53ad9a35de722e7dcc6cc6741de7e35b7d745c4', 'emiliano.berge@kiehn.name', 'terrill')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'keira') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'evangeline@watsica.info') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("created_at", "password_salt", "updated_at", "password_hash", "email", "username") VALUES('2014-08-29 06:40:52', '036c4cb856ab2d44497e0b15573ea7744565beda', '2014-08-29 06:40:52', 'ab223cbeeb2014b20ed657a39d2e06ffb1ed787a', 'evangeline@watsica.info', 'keira')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'leila.lueilwitz@runolfsdottir.net') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("created_at", "password_salt", "updated_at", "password_hash", "email", "username") VALUES('2014-08-29 06:40:52', 'a740dbdeeb59be27804dbac3a34921100c682d6c', '2014-08-29 06:40:52', 'a9c9ce581a53a9e5278200191dbd5602e9af33e7', 'leila.lueilwitz@runolfsdottir.net', 'quinton_rippin')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mTweet Last ID (0.1ms)[0m   [0mSELECT id FROM "tweets" ORDER BY id DESC[0m
+  [4;36;1mTweet Populate (2.2ms)[0m   [0;1mINSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (1, 83, 'Eaque a magnam consequatur quis inventore numquam.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (2, 83, 'Minus et illo voluptatem voluptatem quibusdam.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (3, 83, 'Nihil iste excepturi totam voluptates laudantium.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (4, 83, 'Hic excepturi fuga dignissimos.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (5, 83, 'Voluptatem consequatur exercitationem quia voluptatem sed et.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (6, 83, 'Quidem sunt perferendis quasi at voluptatem suscipit aliquam sed.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (7, 83, 'Error molestiae quo modi ex quam.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (8, 83, 'Voluptas eum dolor cupiditate et consequatur.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (9, 83, 'Atque accusamus repellat architecto doloremque voluptate soluta laborum.', '2014-08-29 02:40:52')[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 83 AND "friendships".user_id = 83) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(83, '2014-08-29 06:40:52', 83, '2014-08-29 06:40:52')[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 86 AND "friendships".user_id = 83) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(86, '2014-08-29 06:40:52', 83, '2014-08-29 06:40:52')[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 85 AND "friendships".user_id = 83) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(85, '2014-08-29 06:40:52', 83, '2014-08-29 06:40:52')[0m
+  [4;35;1mTweet Last ID (0.4ms)[0m   [0mSELECT id FROM "tweets" ORDER BY id DESC[0m
+  [4;36;1mTweet Populate (2.3ms)[0m   [0;1mINSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (10, 84, 'Rerum ut porro earum facilis.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (11, 84, 'Nihil aliquam impedit enim.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (12, 84, 'Molestiae et totam qui.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (13, 84, 'Quae veniam qui vel perferendis et.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (14, 84, 'In consectetur quae veniam dignissimos sit suscipit natus qui.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (15, 84, 'Et ut delectus quae eius praesentium eum optio.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (16, 84, 'Nihil provident velit sint ex.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (17, 84, 'Et placeat qui neque repellendus dolores tempora.', '2014-08-29 02:40:52')[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 86 AND "friendships".user_id = 84) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(86, '2014-08-29 06:40:52', 84, '2014-08-29 06:40:52')[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 91 AND "friendships".user_id = 84) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(91, '2014-08-29 06:40:52', 84, '2014-08-29 06:40:52')[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 88 AND "friendships".user_id = 84) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(88, '2014-08-29 06:40:52', 84, '2014-08-29 06:40:52')[0m
+  [4;35;1mTweet Last ID (0.4ms)[0m   [0mSELECT id FROM "tweets" ORDER BY id DESC[0m
+  [4;36;1mTweet Populate (2.0ms)[0m   [0;1mINSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (18, 85, 'Asperiores quaerat exercitationem cum voluptatem debitis.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (19, 85, 'Consequatur et sed et nam ut quidem error odio.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (20, 85, 'Debitis autem quo molestiae aspernatur doloremque saepe asperiores.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (21, 85, 'Esse similique et sed reprehenderit enim ut aliquid ad.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (22, 85, 'Aperiam illo et hic et velit.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (23, 85, 'In consectetur quod esse dolorem.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (24, 85, 'Optio animi saepe aut.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (25, 85, 'Eum voluptas cupiditate voluptatem cumque facilis.', '2014-08-29 02:40:52')[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 90 AND "friendships".user_id = 85) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(90, '2014-08-29 06:40:52', 85, '2014-08-29 06:40:52')[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 90 AND "friendships".user_id = 85) LIMIT 1[0m
+User 'emiliano.berge@kiehn.name' already exists in the user's friendship list.
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 89 AND "friendships".user_id = 85) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(89, '2014-08-29 06:40:52', 85, '2014-08-29 06:40:52')[0m
+  [4;36;1mTweet Last ID (0.6ms)[0m   [0;1mSELECT id FROM "tweets" ORDER BY id DESC[0m
+  [4;35;1mTweet Populate (2.4ms)[0m   [0mINSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (26, 86, 'Assumenda expedita eum asperiores nemo aut velit velit quo.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (27, 86, 'Vero quisquam cum dolorum a debitis veniam consequatur.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (28, 86, 'Quo odit tenetur iure.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (29, 86, 'Sapiente magni sint ut quia qui.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (30, 86, 'Excepturi dolorum numquam veritatis.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (31, 86, 'Quis sint distinctio rem illo.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (32, 86, 'Iste rem ducimus ut aut qui.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (33, 86, 'Suscipit illum sit qui.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (34, 86, 'Voluptas beatae possimus aut.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (35, 86, 'Quo omnis vitae illo sunt eligendi cupiditate quam.', '2014-08-29 02:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 89 AND "friendships".user_id = 86) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(89, '2014-08-29 06:40:52', 86, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 85 AND "friendships".user_id = 86) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(85, '2014-08-29 06:40:52', 86, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 86 AND "friendships".user_id = 86) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(86, '2014-08-29 06:40:52', 86, '2014-08-29 06:40:52')[0m
+  [4;36;1mTweet Last ID (0.7ms)[0m   [0;1mSELECT id FROM "tweets" ORDER BY id DESC[0m
+  [4;35;1mTweet Populate (2.1ms)[0m   [0mINSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (36, 87, 'Laudantium aut ab esse enim consequuntur est dicta.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (37, 87, 'Itaque voluptatum ullam laudantium.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (38, 87, 'Dolor ducimus maiores consequuntur debitis sunt est.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (39, 87, 'Velit sunt numquam magnam sed maiores voluptates quis.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (40, 87, 'Qui eos dolores doloremque.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (41, 87, 'Qui labore ut aspernatur.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (42, 87, 'Inventore sit consequatur nisi.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (43, 87, 'Et magni recusandae incidunt voluptatibus.', '2014-08-29 02:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 92 AND "friendships".user_id = 87) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(92, '2014-08-29 06:40:52', 87, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 83 AND "friendships".user_id = 87) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(83, '2014-08-29 06:40:52', 87, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 89 AND "friendships".user_id = 87) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(89, '2014-08-29 06:40:52', 87, '2014-08-29 06:40:52')[0m
+  [4;36;1mTweet Last ID (1.0ms)[0m   [0;1mSELECT id FROM "tweets" ORDER BY id DESC[0m
+  [4;35;1mTweet Populate (3.5ms)[0m   [0mINSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (44, 88, 'Illum veniam corrupti quis.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (45, 88, 'Molestias aut est quibusdam neque.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (46, 88, 'Non harum aut omnis cumque ratione.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (47, 88, 'Animi reprehenderit omnis neque asperiores aspernatur eos sed aut.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (48, 88, 'Et non quia suscipit deserunt fugiat.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (49, 88, 'Explicabo iusto aperiam quia delectus cumque illo.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (50, 88, 'Quo soluta ab vero quod iusto.', '2014-08-29 02:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 86 AND "friendships".user_id = 88) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(86, '2014-08-29 06:40:52', 88, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 92 AND "friendships".user_id = 88) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(92, '2014-08-29 06:40:52', 88, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 90 AND "friendships".user_id = 88) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(90, '2014-08-29 06:40:52', 88, '2014-08-29 06:40:52')[0m
+  [4;36;1mTweet Last ID (1.0ms)[0m   [0;1mSELECT id FROM "tweets" ORDER BY id DESC[0m
+  [4;35;1mTweet Populate (2.3ms)[0m   [0mINSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (51, 89, 'Ut perferendis voluptas magni laudantium id est.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (52, 89, 'Commodi quia distinctio vel.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (53, 89, 'Non hic quam harum omnis adipisci et eaque.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (54, 89, 'Sed rerum est quia harum est similique quisquam sint.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (55, 89, 'Libero dolores et non cupiditate.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (56, 89, 'Voluptatum ea quidem quaerat voluptas.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (57, 89, 'Dolores in nisi sunt fugit repellat modi non.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (58, 89, 'Numquam adipisci provident quia vel velit.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (59, 89, 'In dolorem quos et sequi eligendi dolorum eveniet ipsa.', '2014-08-29 02:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 90 AND "friendships".user_id = 89) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(90, '2014-08-29 06:40:52', 89, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 86 AND "friendships".user_id = 89) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(86, '2014-08-29 06:40:52', 89, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 85 AND "friendships".user_id = 89) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(85, '2014-08-29 06:40:52', 89, '2014-08-29 06:40:52')[0m
+  [4;36;1mTweet Last ID (1.2ms)[0m   [0;1mSELECT id FROM "tweets" ORDER BY id DESC[0m
+  [4;35;1mTweet Populate (6.3ms)[0m   [0mINSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (60, 90, 'Provident placeat omnis et nemo cupiditate architecto aut.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (61, 90, 'Molestias maiores sed et blanditiis.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (62, 90, 'Sint tenetur neque eveniet assumenda.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (63, 90, 'Quisquam quod in aspernatur.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (64, 90, 'Amet aperiam est perspiciatis iusto fuga ut accusamus.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (65, 90, 'Voluptates quia assumenda nesciunt facere ut odio.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (66, 90, 'Libero possimus asperiores veritatis repellat qui et laboriosam.', '2014-08-29 02:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 87 AND "friendships".user_id = 90) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(87, '2014-08-29 06:40:52', 90, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 86 AND "friendships".user_id = 90) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(86, '2014-08-29 06:40:52', 90, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 91 AND "friendships".user_id = 90) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(91, '2014-08-29 06:40:52', 90, '2014-08-29 06:40:52')[0m
+  [4;36;1mTweet Last ID (1.3ms)[0m   [0;1mSELECT id FROM "tweets" ORDER BY id DESC[0m
+  [4;35;1mTweet Populate (1.9ms)[0m   [0mINSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (67, 91, 'Sit dolore eum cumque in voluptas quibusdam quae.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (68, 91, 'Dolor magni eveniet et nam voluptatem.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (69, 91, 'Voluptatem repudiandae vitae ipsa.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (70, 91, 'Dolor animi eligendi nostrum non numquam voluptas.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (71, 91, 'Quis soluta consectetur rem ea eos aliquid id.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (72, 91, 'Fugit magni qui enim aut.', '2014-08-29 02:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 89 AND "friendships".user_id = 91) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(89, '2014-08-29 06:40:52', 91, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 83 AND "friendships".user_id = 91) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(83, '2014-08-29 06:40:52', 91, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 84 AND "friendships".user_id = 91) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(84, '2014-08-29 06:40:52', 91, '2014-08-29 06:40:52')[0m
+  [4;36;1mTweet Last ID (1.4ms)[0m   [0;1mSELECT id FROM "tweets" ORDER BY id DESC[0m
+  [4;35;1mTweet Populate (2.1ms)[0m   [0mINSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (73, 92, 'Tempora maiores fugiat dolore.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (74, 92, 'Impedit similique itaque eaque voluptas culpa quod esse fuga.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (75, 92, 'Vel velit ex ut facere dolorem rerum atque.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (76, 92, 'Et sed tenetur dolorem optio earum.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (77, 92, 'Est hic consequatur non autem.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (78, 92, 'Magnam et aperiam aut quia ut eius et vel.', '2014-08-29 02:40:52');INSERT INTO "tweets" ("id", "user_id", "message", "created_at") VALUES (79, 92, 'Voluptatem at dolorem adipisci consequatur amet.', '2014-08-29 02:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 87 AND "friendships".user_id = 92) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(87, '2014-08-29 06:40:52', 92, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 86 AND "friendships".user_id = 92) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(86, '2014-08-29 06:40:52', 92, '2014-08-29 06:40:52')[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mFriendship Load (0.1ms)[0m   [0;1mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 89 AND "friendships".user_id = 92) LIMIT 1[0m
+  [4;35;1mFriendship Create (0.2ms)[0m   [0mINSERT INTO "friendships" ("friend_id", "created_at", "user_id", "updated_at") VALUES(89, '2014-08-29 06:40:52', 92, '2014-08-29 06:40:52')[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2014-08-29 02:41:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 103) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=103):
+  lib/authentication.rb:24:in `current_user'
+  lib/authentication.rb:28:in `logged_in?'
+  lib/authentication.rb:32:in `login_required'
+
+Rendered rescues/_trace (33.8ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2014-08-29 02:41:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 103) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=103):
+  lib/authentication.rb:24:in `current_user'
+  lib/authentication.rb:28:in `logged_in?'
+  lib/authentication.rb:32:in `login_required'
+
+Rendered rescues/_trace (33.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20140818054425)
+Migrating to CreateTweets (20140818062356)
+Migrating to CreateFriendships (20140818072958)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("friendships")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tweets")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2014-08-29 02:42:04) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 110ms (View: 108, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2014-08-29 02:42:35) [POST]
+  Parameters: {"commit"=>"Log in", "password"=>"[FILTERED]", "action"=>"create", "login"=>"gillian.yundt", "controller"=>"sessions", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'gillian.yundt') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2014-08-29 02:42:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 83)) [0m
+  [4;35;1mTweet Load (1.4ms)[0m   [0mSELECT * FROM "tweets" WHERE (user_id in (83,86,85,83)) ORDER BY created_at desc[0m
+  [4;36;1mTweet Load (0.3ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets".user_id = 83) ORDER BY tweets.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+Rendered home/_timeline (21.5ms)
+Completed in 161ms (View: 146, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2014-08-29 02:42:39) [GET]
+
+ActionController::RoutingError (No route matches "/gillian.yundt" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2014-08-29 02:42:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 83)) [0m
+  [4;36;1mTweet Load (1.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (83,86,85,83)) ORDER BY created_at desc[0m
+  [4;35;1mTweet Load (0.2ms)[0m   [0mSELECT * FROM "tweets" WHERE ("tweets".user_id = 83) ORDER BY tweets.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+Rendered home/_timeline (23.5ms)
+Completed in 100ms (View: 86, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing TweetsController#create (for 127.0.0.1 at 2014-08-29 02:43:09) [POST]
+  Parameters: {"commit"=>"Tweet", "action"=>"create", "tweet"=>{"message"=>"What the hell."}, "controller"=>"tweets", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mTweet Create (0.3ms)[0m   [0;1mINSERT INTO "tweets" ("message", "user_id", "created_at") VALUES('What the hell.', 83, '2014-08-29 06:43:09')[0m
+Redirected to http://localhost:3000/
+Completed in 91ms (DB: 1) | 302 Found [http://localhost/tweets]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2014-08-29 02:43:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 83)) [0m
+  [4;35;1mTweet Load (1.1ms)[0m   [0mSELECT * FROM "tweets" WHERE (user_id in (83,86,85,83)) ORDER BY created_at desc[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets".user_id = 83) ORDER BY tweets.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+Rendered home/_timeline (59.9ms)
+Completed in 137ms (View: 124, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2014-08-29 02:43:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"sessions"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create, current_user, destroy, logged_in?, login_required, new, and redirect_to_target_or_default):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2014-08-29 02:43:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 83)) [0m
+  [4;35;1mTweet Load (45.1ms)[0m   [0mSELECT * FROM "tweets" WHERE (user_id in (83,86,85,83)) ORDER BY created_at desc[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets".user_id = 83) ORDER BY tweets.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+Rendered home/_timeline (22.8ms)
+Completed in 143ms (View: 86, DB: 46) | 200 OK [http://localhost/]
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" ORDER BY users.id DESC LIMIT 1[0m
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:04) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.4ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (131.1ms)
+Completed in 151ms (View: 137, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:07) [POST]
+  Parameters: {"commit"=>"Follow", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 92 AND "friendships".user_id = 83) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("user_id", "friend_id", "created_at", "updated_at") VALUES(83, 92, '2014-08-29 06:46:07', '2014-08-29 06:46:07')[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:07) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.4ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (88.2ms)
+Completed in 105ms (View: 91, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:08) [POST]
+  Parameters: {"commit"=>"Following", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT * FROM "friendships" WHERE (user_id = 83 and friend_id = 92) LIMIT 1[0m
+  [4;36;1mFriendship Destroy (0.2ms)[0m   [0;1mDELETE FROM "friendships" WHERE "id" = 35[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 54ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:08) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.8ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (127.2ms)
+Completed in 146ms (View: 131, DB: 4) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:08) [POST]
+  Parameters: {"commit"=>"Follow", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 92 AND "friendships".user_id = 83) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("user_id", "friend_id", "created_at", "updated_at") VALUES(83, 92, '2014-08-29 06:46:08', '2014-08-29 06:46:08')[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:08) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.3ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (135.5ms)
+Completed in 153ms (View: 138, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:09) [POST]
+  Parameters: {"commit"=>"Following", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.2ms)[0m   [0mSELECT * FROM "friendships" WHERE (user_id = 83 and friend_id = 92) LIMIT 1[0m
+  [4;36;1mFriendship Destroy (0.2ms)[0m   [0;1mDELETE FROM "friendships" WHERE "id" = 36[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:09) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.3ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (134.6ms)
+Completed in 152ms (View: 137, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:09) [POST]
+  Parameters: {"commit"=>"Follow", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 92 AND "friendships".user_id = 83) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("user_id", "friend_id", "created_at", "updated_at") VALUES(83, 92, '2014-08-29 06:46:09', '2014-08-29 06:46:09')[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:10) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.5ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (88.6ms)
+Completed in 149ms (View: 91, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:10) [POST]
+  Parameters: {"commit"=>"Following", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.3ms)[0m   [0mSELECT * FROM "friendships" WHERE (user_id = 83 and friend_id = 92) LIMIT 1[0m
+  [4;36;1mFriendship Destroy (0.2ms)[0m   [0;1mDELETE FROM "friendships" WHERE "id" = 37[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 52ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:10) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.3ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (91.5ms)
+Completed in 109ms (View: 94, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:11) [POST]
+  Parameters: {"commit"=>"Follow", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 92 AND "friendships".user_id = 83) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("user_id", "friend_id", "created_at", "updated_at") VALUES(83, 92, '2014-08-29 06:46:11', '2014-08-29 06:46:11')[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:11) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.3ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (126.3ms)
+Completed in 143ms (View: 129, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:11) [POST]
+  Parameters: {"commit"=>"Following", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT * FROM "friendships" WHERE (user_id = 83 and friend_id = 92) LIMIT 1[0m
+  [4;36;1mFriendship Destroy (0.2ms)[0m   [0;1mDELETE FROM "friendships" WHERE "id" = 38[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:11) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (2.4ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (138.4ms)
+Completed in 156ms (View: 141, DB: 4) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:12) [POST]
+  Parameters: {"commit"=>"Follow", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 92 AND "friendships".user_id = 83) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("user_id", "friend_id", "created_at", "updated_at") VALUES(83, 92, '2014-08-29 06:46:12', '2014-08-29 06:46:12')[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 65ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:12) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.4ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (90.7ms)
+Completed in 153ms (View: 139, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:13) [POST]
+  Parameters: {"commit"=>"Following", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT * FROM "friendships" WHERE (user_id = 83 and friend_id = 92) LIMIT 1[0m
+  [4;36;1mFriendship Destroy (0.2ms)[0m   [0;1mDELETE FROM "friendships" WHERE "id" = 39[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 51ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:13) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.5ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (89.3ms)
+Completed in 108ms (View: 92, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:14) [POST]
+  Parameters: {"commit"=>"Follow", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT "friendships".id FROM "friendships" WHERE ("friendships"."friend_id" = 92 AND "friendships".user_id = 83) LIMIT 1[0m
+  [4;36;1mFriendship Create (0.2ms)[0m   [0;1mINSERT INTO "friendships" ("user_id", "friend_id", "created_at", "updated_at") VALUES(83, 92, '2014-08-29 06:46:14', '2014-08-29 06:46:14')[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 57ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:14) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.4ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (129.1ms)
+Completed in 147ms (View: 132, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#toggle_follow (for 127.0.0.1 at 2014-08-29 02:46:15) [POST]
+  Parameters: {"commit"=>"Following", "action"=>"toggle_follow", "controller"=>"home", "username"=>"quinton_rippin", "authenticity_token"=>"3dSaKsg6kiQU00lOscRl3x9uIs75k2iSYmexFrRPlFU="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mFriendship Load (0.1ms)[0m   [0mSELECT * FROM "friendships" WHERE (user_id = 83 and friend_id = 92) LIMIT 1[0m
+  [4;36;1mFriendship Destroy (0.2ms)[0m   [0;1mDELETE FROM "friendships" WHERE "id" = 40[0m
+Redirected to http://localhost:3000/quinton_rippin
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/quinton_rippin/toggle_follow]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:46:15) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.4ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (132.6ms)
+Completed in 150ms (View: 136, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:50:48) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;35;1mTweet Load (1.6ms)[0m   [0mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (145.7ms)
+Completed in 164ms (View: 148, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2014-08-29 02:50:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg-cloud.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:51:50) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.4ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (134.3ms)
+Completed in 152ms (View: 137, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2014-08-29 02:51:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg-cloud.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:52:07) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;35;1mTweet Load (1.4ms)[0m   [0mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (128.3ms)
+Completed in 145ms (View: 131, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:53:45) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.5ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (143.9ms)
+Completed in 164ms (View: 147, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:54:38) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;35;1mTweet Load (1.5ms)[0m   [0mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (141.2ms)
+Completed in 159ms (View: 144, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:54:51) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.4ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (140.3ms)
+Completed in 158ms (View: 143, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 02:56:36) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;35;1mTweet Load (1.5ms)[0m   [0mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (140.6ms)
+Completed in 162ms (View: 144, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 03:01:04) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;36;1mTweet Load (1.5ms)[0m   [0;1mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (130.8ms)
+Completed in 151ms (View: 136, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2014-08-29 03:03:05) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home", "username"=>"quinton_rippin"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'quinton_rippin') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 92)) [0m
+  [4;35;1mTweet Load (1.6ms)[0m   [0mSELECT * FROM "tweets" WHERE (user_id in (87,86,89,92)) ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering home/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE ("users"."id" = 92) AND (("friendships".user_id = 83)) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 87) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 89) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 92) [0m
+Rendered home/_timeline (137.2ms)
+Completed in 158ms (View: 143, DB: 3) | 200 OK [http://localhost/quinton_rippin]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2014-08-29 03:03:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 83)) [0m
+  [4;35;1mTweet Load (1.2ms)[0m   [0mSELECT * FROM "tweets" WHERE (user_id in (83,86,85,83)) ORDER BY created_at desc[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets".user_id = 83) ORDER BY tweets.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+Rendered home/_timeline (22.7ms)
+Completed in 141ms (View: 128, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2014-08-29 03:04:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users".id = "friendships".friend_id WHERE (("friendships".user_id = 83)) [0m
+  [4;35;1mTweet Load (1.2ms)[0m   [0mSELECT * FROM "tweets" WHERE (user_id in (83,86,85,83)) ORDER BY created_at desc[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets".user_id = 83) ORDER BY tweets.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 83) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 85) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 86) [0m
+Rendered home/_timeline (21.7ms)
+Completed in 138ms (View: 124, DB: 2) | 200 OK [http://localhost/]
