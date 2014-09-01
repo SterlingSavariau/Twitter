@@ -22,4 +22,8 @@ class HomeController < ApplicationController
 		redirect_to user_tweets_path(@user.username)
 	end
 
+	def following
+		@friends = current_user.friends
+	end
+
 end
