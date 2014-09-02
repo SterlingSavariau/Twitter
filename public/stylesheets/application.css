@@ -1,3 +1,5 @@
+/* General */
+
 body {
   margin: 0px;
   padding: 0px;
@@ -94,6 +96,113 @@ input.button {
   color: #666;
 }
 
+/* End-General */
+
+/* Following + Followers */
+
+#follow {
+  margin: 0px;
+  padding: 0px;
+  width: 521px;
+}
+
+#follow li {
+  list-style: none;
+  padding: 10px 0px;
+  margin: 0px;
+  background-color: #fff;
+  border-bottom: 1px dashed #D2DADA;
+}
+
+#follow li.first {
+  border-top: 1px dashed #D2DADA;
+}
+
+#follow li:hover {
+  background-color: #F7F7F7;
+}
+
+#follow li img {
+  float: left;
+}
+
+#follow li div.follow_container {
+  float: left;
+  margin-left: 10px;
+  width: 450px;
+}
+
+#follow li div.follow_container h3 {
+  margin: 0px;
+  font-size: 16px;
+}
+
+#follow li div.follow_container a {
+  color: #2276BB;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#follow li div.follow_container div.time_ago {
+  color: #9C9C9C;
+  font-size: 90%;
+  padding-top: 3px;
+}
+
+/* End-Following + Followers */
+
+/* Timeline */
+#timeline {
+  margin: 0px;
+  padding: 0px;
+  width: 521px;
+}
+
+#timeline li {
+  list-style: none;
+  padding: 10px 0px;
+  margin: 0px;
+  background-color: #fff;
+  border-bottom: 1px dashed #D2DADA;
+}
+
+#timeline li.first {
+  border-top: 1px dashed #D2DADA;
+}
+
+#timeline li:hover {
+  background-color: #F7F7F7;
+}
+
+#timeline li img {
+  float: left;
+}
+
+#timeline li div.tweet_message_container {
+  float: left;
+  margin-left: 10px;
+  width: 450px;
+}
+
+#timeline li div.tweet_message_container h3 {
+  margin: 0px;
+  font-size: 16px;
+}
+
+#timeline li div.tweet_message_container a {
+  color: #2276BB;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#timeline li div.tweet_message_container div.time_ago {
+  color: #9C9C9C;
+  font-size: 90%;
+  padding-top: 3px;
+}
+
+/* End-Timeline */
+
 /* Tweet Form */
 #new_tweet_form {
   min-width: 521px;
@@ -134,52 +243,7 @@ input.button {
   color: #E3E1E3;
 }
 
-/* Timeline */
-#timeline {
-  margin: 0px;
-  padding: 0px;
-  width: 521px;
-}
-
-#timeline li {
-  list-style: none;
-  padding: 10px 0px;
-  margin: 0px;
-  background-color: #fff;
-  border-bottom: 1px dashed #D2DADA;
-}
-
-#timeline li.first {
-  border-top: 1px dashed #D2DADA;
-}
-
-#timeline li:hover {
-  background-color: #F7F7F7;
-}
-
-#timeline li img {
-  float: left;
-}
-
-#timeline li div.tweet_message_container {
-  float: left;
-  margin-left: 10px;
-  width: 450px;
-}
-
-#timeline li div.tweet_message_container a {
-  color: #2276BB;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#timeline li div.tweet_message_container div.time_ago {
-  color: #9C9C9C;
-  font-size: 90%;
-  padding-top: 3px;
-}
-
-/* End-Timeline */
+/* End-Tweet Form */
 
 #errorExplanation {
   width: 400px;

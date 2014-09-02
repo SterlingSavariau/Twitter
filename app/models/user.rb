@@ -15,6 +15,7 @@ class User < ActiveRecord::Base
   validates_presence_of :password, :on => :create
   validates_confirmation_of :password
   validates_length_of :password, :minimum => 4, :allow_blank => true
+  validates_exclusion_of :username, :in => %w( admin superuser following ), :message => "Not a valid username"
 
   has_many :tweets, :dependent => :destroy
   

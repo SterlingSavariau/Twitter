@@ -1,1 +1,18 @@
-asdfghjk
+<ul id="timeline">
+	<% @friends.each do |friend| %>
+	<li<% if @friends.first == friend %> class="first"<% end %>>
+		<%= image_tag friend.gravatar_url %>
+	  <div class="tweet_message_container">
+		<h3 style="margin: 0px"><%= link_to friend.username, user_tweets_path(friend.username) %></h3>
+		<% if friend.tweets.length > 0 %>
+			<%= h friend.tweets.last.message %>
+				<%= distance_of_time_in_words_to_now(friend.tweets.last.created_at) %> ago
+		<% end %>
+		<div class="button_container">
+			BUTTON
+		</div>
+		</div>
+		<div class ="clear"></div>
+	</li>
+	<% end %>
+</ul>
