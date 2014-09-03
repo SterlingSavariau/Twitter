@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resources :tweets
 
+  map.remove_friend '/remove_friend/:username', :controller => 'home', :action => 'remove_friend'
   map.following '/following', :controller => 'home', :action => 'following'
   map.user_tweets '/:username', :controller => 'home', :action => 'show'
   map.toggle_follow '/:username/toggle_follow', :controller => 'home', :action => 'toggle_follow'

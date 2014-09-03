@@ -26,4 +26,13 @@ class HomeController < ApplicationController
 		@friends = current_user.friends
 	end
 
+	def remove_friend
+		friend = User.find_by_username(params[:username])
+		if friend
+			current_user.remove_friend(friend)
+			render :text => friend.username
+		else
+			render :text => "None"
+		end
+	end
 end

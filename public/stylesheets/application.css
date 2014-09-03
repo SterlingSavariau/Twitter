@@ -129,12 +129,17 @@ input.button {
 #follow li div.follow_container {
   float: left;
   margin-left: 10px;
-  width: 450px;
+  width: 375px;
 }
 
 #follow li div.follow_container h3 {
   margin: 0px;
   font-size: 16px;
+}
+
+#follow li div.follow_container div.button_container {
+  width: 65px;
+  float: right;
 }
 
 #follow li div.follow_container a {
@@ -187,6 +192,12 @@ input.button {
 #timeline li div.tweet_message_container h3 {
   margin: 0px;
   font-size: 16px;
+}
+
+#timeline li div.button_container {
+  width: 135px;
+  text-align: right;
+  float: right;
 }
 
 #timeline li div.tweet_message_container a {
