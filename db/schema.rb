@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140818072958) do
+ActiveRecord::Schema.define(:version => 20140903191211) do
 
   create_table "friendships", :force => true do |t|
     t.integer  "user_id"
@@ -18,11 +18,16 @@ ActiveRecord::Schema.define(:version => 20140818072958) do
     t.datetime "updated_at"
   end
 
+  add_index "friendships", ["friend_id"], :name => "index_friendships_on_friend_id"
+  add_index "friendships", ["user_id"], :name => "index_friendships_on_user_id"
+
   create_table "tweets", :force => true do |t|
     t.integer  "user_id",    :null => false
     t.string   "message",    :null => false
     t.datetime "created_at", :null => false
   end
+
+  add_index "tweets", ["user_id"], :name => "index_tweets_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "username"
@@ -32,5 +37,8 @@ ActiveRecord::Schema.define(:version => 20140818072958) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "users", ["email"], :name => "index_users_on_email"
+  add_index "users", ["username"], :name => "index_users_on_username"
 
 end

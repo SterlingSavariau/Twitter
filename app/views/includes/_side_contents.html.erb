@@ -12,6 +12,13 @@
 	<h4><%= pluralize(current_user.friends_of.count, "follower") %></h4>
 </div>
 
+<% form_tag :url => search_path do %>
+<div id="search_bar">
+	<%= text_field_tag :q, params[:q], :class => "text" %>
+	<div id = "search_submit_button">&nbsp;</div>
+</div>
+<% end %>
+
 <div id="side_content_container">
 	<h4>Followers</h4>
 	<% current_user.friends_of.each do |friend| %>

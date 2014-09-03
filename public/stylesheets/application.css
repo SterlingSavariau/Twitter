@@ -333,3 +333,38 @@ input.button {
 #side_content_container h4 {
   margin: 2px 0px;
 }
+
+#search_bar {
+  margin-top: 15px;
+  height: 25px;
+  width: 160px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 2.5px;
+  border: 1px solid #999999;
+}
+
+#search_bar input.text {
+  float: left;
+  width: 125px;
+  border: 0px;
+  height: 23px;
+  font-size: 12px;
+  line-height: 15px;
+  padding-left: 3px;
+  background-color: transparent;
+}
+
+#search_bar #search_submit_button {
+  background: url('/images/nav_search_submit.png');
+  border-left: 1px solid #999;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  float: right;
+  width: 28px;
+  height: 25px;
+}
+
+#search_bar #search_submit_button:hover {
+  background-position: 0 -25px;
+  cursor: pointer;
+}

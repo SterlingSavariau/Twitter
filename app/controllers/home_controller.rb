@@ -35,4 +35,9 @@ class HomeController < ApplicationController
 			render :text => "None"
 		end
 	end
+
+	def search
+		@q = params[:q]
+		@users = User.find_by_search_query(@q)
+	end
 end
