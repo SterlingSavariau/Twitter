@@ -12,15 +12,25 @@ class HomeController < ApplicationController
 		@tweets = @user.all_tweets
 	end
 
-	def toggle_follow
-		@user = User.find_by_username(params[:username])
-		if current_user.is_friend? @user
-		  current_user.remove_friend(@user)
-		else
-		  current_user.add_friend(@user)
-		end 
-		redirect_to user_tweets_path(@user.username)
-	end
+  def toggle_follow
+    @user = User.find_by_username(params[:username])
+    if current_user.is_friend? @user
+      current_user.remove_friend(@user)
+    else
+      current_user.add_friend(@user)
+    end
+    redirect_to user_tweets_path(@user.username)
+  end
+  
+  def toggle_follow_via_ajax
+    user = User.find_by_username(params[:username])
+    if current_user.is_friend? user
+      current_user.remove_friend(user)
+    else
+      current_user.add_friend(user)
+    end
+    render :text => user.username
+  end
 
 	def following
 		@friends = current_user.friends
@@ -38,6 +48,6 @@ class HomeController < ApplicationController
 
 	def search
 		@q = params[:q]
-		@users = User.find_by_search_query(@q)
+		@friends = User.find_by_search_query(@q)
 	end
 end

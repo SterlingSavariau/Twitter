@@ -1,0 +1,39 @@
+<ul id="timeline">
+	<% @friends.each do |friend| %>
+	<li<% if @friends.first == friend %> class="first"<% end %> id="<%= friend.username %>">
+		<%= image_tag friend.gravatar_url %>
+	  <div class="tweet_message_container" style="width: 305px;">
+		<h3 style="margin: 0px"><%= link_to friend.username, user_tweets_path(friend.username) %></h3>
+		<% if friend.tweets.length > 0 %>
+			<%= h friend.tweets.last.message %>
+				<%= distance_of_time_in_words_to_now(friend.tweets.last.created_at) %> ago
+		<% end %>
+	</div>
+		<div class="button_container">
+			<input type="button" name="<%= friend.username %>" id="btn_<%= friend.username %>" class="button ajax_button" 
+			  value="<% if current_user.is_friend? @friend %>Unfollow<% else %>Follow<% end %>"/>
+		</div>
+		<div class ="clear"></div>
+	</li>
+	<% end %>
+</ul>
+
+<script type="text/javascript">
+$(function() {
+  $('.ajax_button').click(function() {
+    $.ajax({
+       type: "POST",
+       url: "/" + $(this).attr('name') + "/toggle_follow_via_ajax",
+       success: function(msg){
+         elm = $('#btn_' + msg);
+         if (elm.val() == "Unfollow") {
+           elm.val("Follow");
+         } else {
+           elm.val("Unfollow");
+           /* $('#' + msg).fadeOut('slow'); */
+         }
+       }
+     });
+  })
+});
+</script>
