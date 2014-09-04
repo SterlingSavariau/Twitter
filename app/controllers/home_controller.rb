@@ -47,7 +47,8 @@ class HomeController < ApplicationController
 	end
 
 	def search
+		# disabled self following
 		@q = params[:q]
-		@friends = User.find_by_search_query(@q)
+		@friends = User.excluding(current_user).like(@q) # find_by_search_query(@q, current_user)
 	end
 end
