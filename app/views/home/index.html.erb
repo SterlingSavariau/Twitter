@@ -24,8 +24,7 @@ $(function() {
   	<div class="clear"></div>
 	<%= f.text_area :message %>
 	<div id="latest_message">
-		<strong>Latest: </strong><%= h @last_tweet.message %>
-		<%= distance_of_time_in_words_to_now(@last_tweet.created_at) %> ago
+		<strong>Latest: </strong><%= h( "#{last_tweet_message} #{last_tweet_created}") %>
 	</div>
 	<div id="submit_button_container">
 		<%= f.submit "Tweet", :class => "button" %>
